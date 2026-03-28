@@ -1,0 +1,153 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+.header{
+    width: 100%;
+    text-align: start;
+    border-bottom: 2px solid #fff;
+    display: flex;
+}
+.link_back{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.header_title{
+    font-size: 70px;
+    margin: 30px auto;
+    color: #fff;
+    text-align: center;
+}
+.description{
+    max-width: 700px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.description::after{
+    content: '';
+    width: 700px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 100px auto;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    max-width: 350px;
+    color: #fff;
+}
+.card_img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card_title{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px auto;
+}
+.card_description{
+    
+}
+.card_list_header{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.card_list{
+    margin-left: 30px;
+}
+
+.card_box_btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.card_btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* form */
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 450px;
+    
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #fff;
+   margin: 10px 0;
+}
+.input{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px 0;
+}
+#mark_input::before{
+    content: '👍';
+    position: relative;
+    margin-left: -20px;
+    top: 15px;
+    left: -15px;
+    /* margin-top: 15px; */
+    
+
+    /* top: 15px; */
+}
+#mark_input::after{
+    content: '👎';
+    position: relative;
+    top: 15px;
+    left: 90%;
+}
+
